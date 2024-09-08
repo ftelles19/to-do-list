@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List | FT</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Minhas Tarefas</h1>
+        <div class="add-task">
+            <input type="text" id="new-task" placeholder="Adicionar nova tarefa">
+            <button id="add-button">+</button>
+        </div>
+        <div class="controls">
+            <div class="search">
+                <input type="text" id="search" placeholder="Pesquisar tarefas">
+                <button id="search-button">Pesquisar</button>
+            </div>
+            <div class="filter">
+                <select id="filter">
+                    <option value="all">Todas as tarefas</option>
+                    <option value="done">Tarefas feitas</option>
+                    <option value="pending">Tarefas pendentes</option>
+                </select>
+            </div>
+        </div>
+        <ul id="task-list">
+            <!-- As tarefas serão adicionadas aqui dinamicamente -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
